@@ -1,0 +1,20 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "NODE_ENV=production NODE_OPTIONS='--experimental-vm-modules --no-warnings --experimental-specifier-resolution=node' node ./src/server.js",
+    "dev": "NODE_OPTIONS='--experimental-vm-modules --no-warnings --experimental-specifier-resolution=node' nodemon ./src/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "sequelize": "^6.25.8",
+    "sqlite3": "^5.1.2"
+  }
+}
